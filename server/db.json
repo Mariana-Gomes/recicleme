@@ -1,0 +1,183 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Garrafa PET",
+      "type": "plastic",
+      "recyclable": true,
+      "degradation": {
+        "value": 500,
+        "unit": "anos"
+      },
+      "disposal": "Reciclagem plástica"
+    },
+    {
+      "id": 2,
+      "title": "Lata de alumínio",
+      "type": "steel",
+      "recyclable": true,
+      "degradation": {
+        "value": 200,
+        "unit": "anos"
+      },
+      "disposal": "Reciclagem de metais"
+    },
+    {
+      "id": 3,
+      "title": "Papelão",
+      "type": "paper",
+      "recyclable": true,
+      "degradation": {
+        "value": 2,
+        "unit": "anos"
+      },
+      "disposal": "Reciclagem de papel"
+    },
+    {
+      "id": 4,
+      "title": "Jornal",
+      "type": "paper",
+      "recyclable": true,
+      "degradation": {
+        "value": 2,
+        "unit": "anos"
+      },
+      "disposal": "Reciclagem de papel"
+    },
+    {
+      "id": 5,
+      "title": "Garrafa de vidro",
+      "type": "glass",
+      "recyclable": true,
+      "degradation": {
+        "value": 1000,
+        "unit": "anos"
+      },
+      "disposal": "Reciclagem de vidro"
+    },
+    {
+      "id": 6,
+      "title": "Copo descartável",
+      "type": "plastic",
+      "recyclable": false,
+      "degradation": {
+        "value": 100,
+        "unit": "anos"
+      },
+      "disposal": "Lixo comum"
+    },
+    {
+      "id": 7,
+      "title": "Embalagem tetra pak",
+      "type": "mixed",
+      "recyclable": true,
+      "degradation": {
+        "value": 30,
+        "unit": "anos"
+      },
+      "disposal": "Ponto de coleta específico"
+    },
+    {
+      "id": 8,
+      "title": "Sacola plástica",
+      "type": "plastic",
+      "recyclable": true,
+      "degradation": {
+        "value": 200,
+        "unit": "anos"
+      },
+      "disposal": "Reciclagem plástica"
+    },
+    {
+      "id": 9,
+      "title": "Lata de aço",
+      "type": "steel",
+      "recyclable": true,
+      "degradation": {
+        "value": 50,
+        "unit": "anos"
+      },
+      "disposal": "Reciclagem de metais"
+    },
+    {
+      "id": 10,
+      "title": "Pneu",
+      "type": "rubber",
+      "recyclable": true,
+      "degradation": {
+        "value": 60,
+        "unit": "anos"
+      },
+      "disposal": "Reciclagem de pneus"
+    },
+    {
+      "id": 11,
+      "title": "Fralda descartável",
+      "type": "organic",
+      "recyclable": true,
+      "degradation": {
+        "value": 500,
+        "unit": "anos"
+      },
+      "disposal": "Lixo comum"
+    },
+    {
+      "id": 12,
+      "title": "Pilha",
+      "type": "dangerous",
+      "recyclable": {
+        "status": "partial",
+        "explanation": "Só reciclável em pontos de coleta específicos"
+      },
+      "degradation": {
+        "value": 200,
+        "unit": "anos"
+      },
+      "disposal": "Ponto de coleta específico"
+    },
+    {
+      "id": 13,
+      "title": "Garrafa de vidro de vinho",
+      "type": "glass",
+      "recyclable": true,
+      "degradation": {
+        "value": 1000,
+        "unit": "anos"
+      },
+      "disposal": "Reciclagem de vidro"
+    },
+    {
+      "id": 14,
+      "title": "Copo de vidro",
+      "type": "glass",
+      "recyclable": true,
+      "degradation": {
+        "value": 1000,
+        "unit": "anos"
+      },
+      "disposal": "Reciclagem de vidro"
+    },
+    {
+      "id": 15,
+      "title": "Fita adesiva",
+      "type": "plastic",
+      "recyclable": false,
+      "degradation": {
+        "value": 100,
+        "unit": "anos"
+      },
+      "disposal": "Lixo comum"
+    },
+    {
+      "id": 16,
+      "title": "Isopor",
+      "type": "plastic",
+      "recyclable": true,
+      "degradation": {
+        "value": 500,
+        "unit": "anos"
+      },
+      "disposal": "Reciclagem plástica"
+    }
+  ]
+}
