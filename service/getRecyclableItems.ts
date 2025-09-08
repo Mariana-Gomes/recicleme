@@ -1,9 +1,10 @@
+import { CategoryKey } from "../src/utils/constants";
 import api from "./api";
 
 export interface RecyclableItem {
   id: number;
   title: string;
-  type: string;
+  type: CategoryKey;
   recyclable: boolean | { status: "partial"; explanation: string };
   degradation: {
     value: number;

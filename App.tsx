@@ -1,54 +1,39 @@
-import React, { useEffect, useState } from "react";
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, FlatList } from "react-native";
-import {
-  getRecyclableItems,
-  RecyclableItem,
-} from "./service/getRecyclableItems";
+import React from "react";
 
-type ListItemProps = {
-  item: RecyclableItem;
+import "./global.css";
+
+import { Home } from "./src/screens/Home";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { RecyclableItems } from "./src/screens/RecyclableItems";
+import { RecyclableItem } from "./service/getRecyclableItems";
+import { CategoryKey } from "./src/utils/constants";
+
+export type RootStackParamList = {
+  Home: undefined;
+  RecyclableItems: { items: RecyclableItem[]; category: CategoryKey };
 };
 
+const Stack = createNativeStackNavigator<RootStackParamList>();
+
 export default function App() {
-  const [recyclableItems, setRecyclableItems] = useState<RecyclableItem[]>([]);
-
-  async function fetchItems() {
-    const data = await getRecyclableItems();
-    setRecyclableItems(data);
-  }
-
-  useEffect(() => {
-    fetchItems();
-  }, []);
-
-  const renderItem = ({ item }: ListItemProps) => {
-    return (
-      <View style={styles.container}>
-        <Text>{item.title}</Text>
-      </View>
-    );
-  };
-
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <FlatList
-        data={recyclableItems}
-        renderItem={renderItem}
-        keyExtractor={(item) => item.id.toString()}
-        contentContainerStyle={{
-          flexGrow: 1,
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      />
-    </View>
+    <>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen
+            name="Home"
+            component={Home}
+            options={{ headerShown: false }}
+          />
+
+          <Stack.Screen
+            name="RecyclableItems"
+            component={RecyclableItems}
+            options={{ headerShown: false }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    alignItems: "center",
-  },
-});
