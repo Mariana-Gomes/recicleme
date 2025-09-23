@@ -1,14 +1,7 @@
 import { View, Text } from "react-native";
 import { Header } from "../components/Header";
 import { Card } from "../components/Card";
-import {
-  Martini,
-  BeerBottle,
-  Hammer,
-  Carrot,
-  Scroll,
-  BatteryCharging,
-} from "phosphor-react-native";
+
 import { useNavigation } from "@react-navigation/native";
 import {
   getRecyclableItems,
@@ -17,7 +10,7 @@ import {
 import { useEffect, useState } from "react";
 import { RootStackParamList } from "../../App";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { CategoryKey } from "../utils/constants";
+import { categories, categoriesData, CategoryKey } from "../utils/constants";
 
 type NavigationProps<Screen extends keyof RootStackParamList> =
   NativeStackNavigationProp<RootStackParamList, Screen>;
@@ -41,6 +34,16 @@ export function Home() {
       (item) => item.type === category
     );
 
+    if (category === "no-recyclable") {
+      const nonRecyclableItems = recyclableItems.filter(
+        (item) => item.recyclable === false
+      );
+      return navigation.navigate("RecyclableItems", {
+        items: nonRecyclableItems,
+        category,
+      });
+    }
+
     navigation.navigate("RecyclableItems", { items: filteredItems, category });
   }
 
@@ -57,46 +60,16 @@ export function Home() {
       </View>
 
       <View className="flex-row flex-wrap justify-center gap-2">
-        <Card
-          className="bg-green-600/70"
-          icon={<Martini color="white" size={32} />}
-          title="Vidro"
-          category="glass"
-          onPress={() => handleCategory("glass")}
-        />
-        <Card
-          className="bg-red-600/70"
-          icon={<BeerBottle color="white" size={32} />}
-          category="plastic"
-          title="Plástico"
-          onPress={() => handleCategory("plastic")}
-        />
-        <Card
-          className="bg-yellow-600/70"
-          icon={<Hammer color="white" size={32} />}
-          category="steel"
-          title="Metal"
-          onPress={() => handleCategory("steel")}
-        />
-        <Card
-          className="bg-amber-950/60"
-          icon={<Carrot color="white" size={32} />}
-          category="organic"
-          title="Orgânico"
-          onPress={() => handleCategory("organic")}
-        />
-        <Card
-          className="bg-blue-600/60"
-          icon={<Scroll color="white" size={32} />}
-          category="paper"
-          title="Papel"
-          onPress={() => handleCategory("paper")}
-        />
-        <Card
-          className="bg-gray-600/60"
-          icon={<BatteryCharging color="white" size={32} />}
-          title="Não reciclável"
-        />
+        {categoriesData.map(({ category, icon: Icon }) => (
+          <Card
+            key={category}
+            className={categories[category].color}
+            icon={<Icon color="white" size={32} />}
+            title={categories[category].label}
+            category={category}
+            onPress={() => handleCategory(category)}
+          />
+        ))}
       </View>
     </View>
   );

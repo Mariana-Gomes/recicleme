@@ -69,7 +69,7 @@
     {
       "id": 7,
       "title": "Embalagem tetra pak",
-      "type": "mixed",
+      "type": "paper",
       "recyclable": true,
       "degradation": {
         "value": 30,
@@ -124,11 +124,8 @@
     {
       "id": 12,
       "title": "Pilha",
-      "type": "dangerous",
-      "recyclable": {
-        "status": "partial",
-        "explanation": "Só reciclável em pontos de coleta específicos"
-      },
+      "type": "steel",
+      "recyclable": false,
       "degradation": {
         "value": 200,
         "unit": "anos"
