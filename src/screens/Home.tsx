@@ -30,10 +30,6 @@ export function Home() {
   }, []);
 
   function handleCategory(category: CategoryKey) {
-    const filteredItems = recyclableItems.filter(
-      (item) => item.type === category
-    );
-
     if (category === "no-recyclable") {
       const nonRecyclableItems = recyclableItems.filter(
         (item) => item.recyclable === false
@@ -44,6 +40,9 @@ export function Home() {
       });
     }
 
+    const filteredItems = recyclableItems.filter(
+      (item) => item.type === category
+    );
     navigation.navigate("RecyclableItems", { items: filteredItems, category });
   }
 

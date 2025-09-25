@@ -102,7 +102,7 @@
     {
       "id": 10,
       "title": "Pneu",
-      "type": "rubber",
+      "type": "plastic",
       "recyclable": true,
       "degradation": {
         "value": 60,
@@ -114,7 +114,7 @@
       "id": 11,
       "title": "Fralda descartável",
       "type": "organic",
-      "recyclable": true,
+      "recyclable": false,
       "degradation": {
         "value": 500,
         "unit": "anos"
@@ -175,6 +175,160 @@
         "unit": "anos"
       },
       "disposal": "Reciclagem plástica"
+    },
+    {
+      "id": 17,
+      "title": "Papel higiênico",
+      "type": "organic",
+      "recyclable": false,
+      "degradation": {
+        "value": 3,
+        "unit": "meses"
+      },
+      "disposal": "Lixo comum"
+    },
+    {
+      "id": 18,
+      "title": "Casca de frutas",
+      "type": "organic",
+      "recyclable": false,
+      "degradation": {
+        "value": 2,
+        "unit": "semanas"
+      },
+      "disposal": "Composteira ou lixo orgânico"
+    },
+    {
+      "id": 19,
+      "title": "Restos de comida",
+      "type": "organic",
+      "recyclable": false,
+      "degradation": {
+        "value": 1,
+        "unit": "mês"
+      },
+      "disposal": "Composteira ou lixo orgânico"
+    },
+    {
+      "id": 20,
+      "title": "Revista",
+      "type": "paper",
+      "recyclable": true,
+      "degradation": {
+        "value": 6,
+        "unit": "meses"
+      },
+      "disposal": "Coleta seletiva de papel"
+    },
+    {
+      "id": 21,
+      "title": "Jornal",
+      "type": "paper",
+      "recyclable": true,
+      "degradation": {
+        "value": 2,
+        "unit": "meses"
+      },
+      "disposal": "Coleta seletiva de papel"
+    },
+    {
+      "id": 22,
+      "title": "Papel alumínio",
+      "type": "metal",
+      "recyclable": true,
+      "degradation": {
+        "value": 200,
+        "unit": "anos"
+      },
+      "disposal": "Coleta seletiva de metais (se limpo); lixo comum (se engordurado)"
+    },
+    {
+      "id": 23,
+      "title": "Guardanapo usado",
+      "type": "paper",
+      "recyclable": false,
+      "degradation": {
+        "value": 1,
+        "unit": "mês"
+      },
+      "disposal": "Lixo comum"
+    },
+    {
+      "id": 24,
+      "title": "Papel toalha",
+      "type": "paper",
+      "recyclable": false,
+      "degradation": {
+        "value": 1,
+        "unit": "mês"
+      },
+      "disposal": "Lixo comum"
+    },
+    {
+      "id": 25,
+      "title": "Canudo plástico",
+      "type": "plastic",
+      "recyclable": false,
+      "degradation": {
+        "value": 200,
+        "unit": "anos"
+      },
+      "disposal": "Lixo comum"
+    },
+    {
+      "id": 26,
+      "title": "Embalagem de salgadinho",
+      "type": "plastic",
+      "recyclable": false,
+      "degradation": {
+        "value": 400,
+        "unit": "anos"
+      },
+      "disposal": "Lixo comum"
+    },
+    {
+      "id": 27,
+      "title": "Caixa de pizza engordurada",
+      "type": "paper",
+      "recyclable": false,
+      "degradation": {
+        "value": 6,
+        "unit": "meses"
+      },
+      "disposal": "Lixo comum"
+    },
+    {
+      "id": 28,
+      "title": "Lâmpada fluorescente",
+      "type": "glass",
+      "recyclable": false,
+      "degradation": {
+        "value": 1000,
+        "unit": "anos"
+      },
+      "disposal": "Ponto de coleta específico"
+    },
+    {
+      "id": 29,
+      "title": "Celular velho",
+      "type": "metal",
+      "recyclable": true,
+      "degradation": {
+        "value": 1000,
+        "unit": "anos"
+      },
+      "disposal": "Reciclagem de eletrônicos"
+    },
+    {
+      "id": 30,
+      "title": "Absorvente descartável",
+      "type": "plastic",
+      "recyclable": false,
+      "degradation": {
+        "value": 500,
+        "unit": "anos"
+      },
+      "disposal": "Lixo comum"
     }
   ]
 }

@@ -8,7 +8,7 @@ type SearchInputProps = TextInputProps & {
 
 export function SearchInput({ onChangeText, value }: SearchInputProps) {
   return (
-    <TouchableOpacity className="flex-row items-center gap-2 border border-gray-300 rounded-lg px-3 py-2 bg-black/5 justify-between">
+    <TouchableOpacity className="flex-row items-center gap-2 rounded-lg px-3 py-2 bg-black/5 justify-between">
       <TextInput
         placeholder="Ex.: Garrafa Pet"
         value={value}

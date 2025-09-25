@@ -1,4 +1,4 @@
-import { View, Text, FlatList, TouchableOpacity } from "react-native";
+import { View, Text, FlatList } from "react-native";
 
 import { categories, CategoryKey } from "../utils/constants";
 
@@ -47,6 +47,7 @@ export function RecyclableItems({ route }: RecyclableItemsProps) {
     const filteredData = items.filter((item) => {
       return item.title.toLowerCase().includes(text.toLowerCase());
     });
+
     setFilterData(filteredData);
   }
 
@@ -54,36 +55,40 @@ export function RecyclableItems({ route }: RecyclableItemsProps) {
     <>
       <View className="m-4">
         <View className="my-4 p-2">
-          <Text className="font-bold text-xl my-8">
-            {categories[category].label}
-          </Text>
-          <View className="mb-6">
-            <SearchInput
-              value={searchText}
-              onChangeText={(text) => {
-                setSearchText(text);
-                filterItems(text);
-              }}
-            />
-          </View>
           <FlatList
-            data={items.filter((item) =>
-              item.title.toLowerCase().includes(searchText.toLowerCase())
-            )}
+            data={items
+              .filter((item) =>
+                item.title.toLowerCase().includes(searchText.toLowerCase())
+              )
+              .sort((a, b) => a.title.localeCompare(b.title))}
             renderItem={renderItem}
             keyExtractor={(item) => item.id.toString()}
+            contentContainerStyle={{ paddingBottom: 10 }}
+            showsVerticalScrollIndicator={false}
+            ListHeaderComponent={
+              <>
+                <Text className="font-bold text-xl my-8">
+                  {categories[category].label}
+                </Text>
+                <View className="mb-6">
+                  <SearchInput
+                    value={searchText}
+                    onChangeText={(text) => {
+                      setSearchText(text);
+                      filterItems(text);
+                    }}
+                  />
+                </View>
+              </>
+            }
           />
         </View>
       </View>
-      <TouchableOpacity
-        onPress={() => setIsVisible(false)}
-        className="flex-1"
-        activeOpacity={1}
-      />
+
       {isVisible && (
         <BottomSheet
           title={selectedItem?.title}
-          recyclable={selectedItem?.recyclable ? "Sim" : "Não"}
+          recyclable={selectedItem?.recyclable === false}
           degradation={
             selectedItem?.degradation?.value +
             " " +
