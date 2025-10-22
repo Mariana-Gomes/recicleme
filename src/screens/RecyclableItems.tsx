@@ -51,16 +51,18 @@ export function RecyclableItems({ route }: RecyclableItemsProps) {
     setFilterData(filteredData);
   }
 
+  const recyclableItems = items
+    .filter((item) =>
+      item.title.toLowerCase().includes(searchText.toLowerCase())
+    )
+    .sort((a, b) => a.title.localeCompare(b.title));
+
   return (
     <>
       <View className="m-4">
         <View className="my-4 p-2">
           <FlatList
-            data={items
-              .filter((item) =>
-                item.title.toLowerCase().includes(searchText.toLowerCase())
-              )
-              .sort((a, b) => a.title.localeCompare(b.title))}
+            data={recyclableItems}
             renderItem={renderItem}
             keyExtractor={(item) => item.id.toString()}
             contentContainerStyle={{ paddingBottom: 10 }}

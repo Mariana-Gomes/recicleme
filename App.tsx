@@ -20,17 +20,17 @@ export default function App() {
   return (
     <>
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator screenOptions={{
+        headerShown: false,
+        contentStyle: { backgroundColor: "#fff" },
+      }}>
           <Stack.Screen
             name="Home"
             component={Home}
-            options={{ headerShown: false }}
           />
-
           <Stack.Screen
             name="RecyclableItems"
             component={RecyclableItems}
-            options={{ headerShown: false }}
           />
         </Stack.Navigator>
       </NavigationContainer>

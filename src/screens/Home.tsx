@@ -1,6 +1,7 @@
 import { View, Text } from "react-native";
 import { Header } from "../components/Header";
 import { Card } from "../components/Card";
+import { Slides } from "../components/Slides";
 
 import { useNavigation } from "@react-navigation/native";
 import {
@@ -47,6 +48,7 @@ export function Home() {
   }
 
   return (
+    <>
     <View className="m-4">
       <View className="mt-10 p-2">
         <Header />
@@ -61,15 +63,26 @@ export function Home() {
       <View className="flex-row flex-wrap justify-center gap-2">
         {categoriesData.map(({ category, icon: Icon }) => (
           <Card
-            key={category}
-            className={categories[category].color}
-            icon={<Icon color="white" size={32} />}
-            title={categories[category].label}
-            category={category}
-            onPress={() => handleCategory(category)}
+          key={category}
+          className={categories[category].color}
+          icon={<Icon color="white" size={32} />}
+          title={categories[category].label}
+          category={category}
+          onPress={() => handleCategory(category)}
           />
         ))}
       </View>
     </View>
+
+      <View>
+        <View className="mx-4 p-2">
+          <Text className="font-bold text-xl">Hora da dica!</Text>
+          <Text className="font-normal text-base text-left color-neutral-900/40 ">
+            Descartar os itens corretamente faz toda a diferença
+          </Text>
+        </View>
+        <Slides />
+      </View>
+    </>
   );
 }
