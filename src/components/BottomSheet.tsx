@@ -30,9 +30,9 @@ export function BottomSheet({
         <Text className="font-bold text-xl mb-3">{title}</Text>
 
         <View className="flex-row items-center justify-between">
-          <Text className="text-lg text-black/70">Reciclável:</Text>
+          <Text className="text-lg text-black font-bold">Reciclável:</Text>
 
-          <Text className="p-2  text-black rounded-md text-center font-bold">
+          <Text className="p-2 text-black rounded-md text-center">
             {recyclable ? "Não" : "Sim"}
           </Text>
         </View>
@@ -40,18 +40,18 @@ export function BottomSheet({
         <View className="h-[0.5px] bg-black/50 my-2" />
 
         <View className="flex-row items-center justify-between">
-          <Text className="text-lg color-black/70">Tempo de degradação:</Text>
-          <Text className="p-2  text-black rounded-md font-bold">
-            {degradation}
+          <Text className="text-lg color-black font-bold">
+            Tempo de degradação:
           </Text>
+          <Text className="p-2  text-black rounded-md ">{degradation}</Text>
         </View>
         <View className="h-[0.5px] bg-black/50 my-2" />
 
-        <View className="flex-row items-center justify-between">
-          <Text className="text-lg color-black/70">Descarte adequado:</Text>
-          <Text className="p-2  text-black rounded-md font-bold">
-            {disposal}
+        <View className="flex-col">
+          <Text className="text-lg text-black font-bold">
+            Descarte adequado
           </Text>
+          <Text className="py-2 text-black rounded-md">{disposal}</Text>
         </View>
       </View>
     </>

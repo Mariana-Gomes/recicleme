@@ -9,7 +9,7 @@
         "value": 500,
         "unit": "anos"
       },
-      "disposal": "Reciclagem plástica"
+      "disposal": "Lave e recicle no ponto de coleta de plástico"
     },
     {
       "id": 2,
@@ -20,7 +20,7 @@
         "value": 200,
         "unit": "anos"
       },
-      "disposal": "Reciclagem de metais"
+      "disposal": "Recicle em pontos de coleta de metal"
     },
     {
       "id": 3,
@@ -31,7 +31,7 @@
         "value": 2,
         "unit": "anos"
       },
-      "disposal": "Reciclagem de papel"
+      "disposal": "Recicle em pontos de coleta de papel"
     },
     {
       "id": 4,
@@ -42,7 +42,7 @@
         "value": 2,
         "unit": "anos"
       },
-      "disposal": "Reciclagem de papel"
+      "disposal": "Recicle em pontos de coleta de papel"
     },
     {
       "id": 5,
@@ -53,7 +53,7 @@
         "value": 1000,
         "unit": "anos"
       },
-      "disposal": "Reciclagem de vidro"
+      "disposal": "Recicle no ponto de vidro após lavar"
     },
     {
       "id": 6,
@@ -64,7 +64,7 @@
         "value": 100,
         "unit": "anos"
       },
-      "disposal": "Lixo comum"
+      "disposal": "Descarte no lixo comum"
     },
     {
       "id": 7,
@@ -75,7 +75,7 @@
         "value": 30,
         "unit": "anos"
       },
-      "disposal": "Ponto de coleta específico"
+      "disposal": "Leve ao ponto de coleta específico"
     },
     {
       "id": 8,
@@ -86,7 +86,7 @@
         "value": 200,
         "unit": "anos"
       },
-      "disposal": "Reciclagem plástica"
+      "disposal": "Lave e recicle no ponto de plástico"
     },
     {
       "id": 9,
@@ -97,7 +97,7 @@
         "value": 50,
         "unit": "anos"
       },
-      "disposal": "Reciclagem de metais"
+      "disposal": "Recicle no ponto de coleta de metal"
     },
     {
       "id": 10,
@@ -108,7 +108,7 @@
         "value": 60,
         "unit": "anos"
       },
-      "disposal": "Reciclagem de pneus"
+      "disposal": "Leve à reciclagem de pneus"
     },
     {
       "id": 11,
@@ -119,7 +119,7 @@
         "value": 500,
         "unit": "anos"
       },
-      "disposal": "Lixo comum"
+      "disposal": "Descarte no lixo comum"
     },
     {
       "id": 12,
@@ -130,7 +130,7 @@
         "value": 200,
         "unit": "anos"
       },
-      "disposal": "Ponto de coleta específico"
+      "disposal": "Entregue no ponto de coleta de pilhas/baterias"
     },
     {
       "id": 13,
@@ -141,7 +141,7 @@
         "value": 1000,
         "unit": "anos"
       },
-      "disposal": "Reciclagem de vidro"
+      "disposal": "Recicle no ponto de vidro após lavar"
     },
     {
       "id": 14,
@@ -152,7 +152,7 @@
         "value": 1000,
         "unit": "anos"
       },
-      "disposal": "Reciclagem de vidro"
+      "disposal": "Recicle no ponto de vidro após lavar"
     },
     {
       "id": 15,
@@ -163,7 +163,7 @@
         "value": 100,
         "unit": "anos"
       },
-      "disposal": "Lixo comum"
+      "disposal": "Descarte no lixo comum"
     },
     {
       "id": 16,
@@ -174,7 +174,7 @@
         "value": 500,
         "unit": "anos"
       },
-      "disposal": "Reciclagem plástica"
+      "disposal": "Recicle no ponto de plástico"
     },
     {
       "id": 17,
@@ -185,7 +185,7 @@
         "value": 3,
         "unit": "meses"
       },
-      "disposal": "Lixo comum"
+      "disposal": "Descarte no lixo comum"
     },
     {
       "id": 18,
@@ -196,7 +196,7 @@
         "value": 2,
         "unit": "semanas"
       },
-      "disposal": "Composteira ou lixo orgânico"
+      "disposal": "Leve à composteira ou lixo orgânico"
     },
     {
       "id": 19,
@@ -207,7 +207,7 @@
         "value": 1,
         "unit": "mês"
       },
-      "disposal": "Composteira ou lixo orgânico"
+      "disposal": "Leve à composteira ou lixo orgânico"
     },
     {
       "id": 20,
@@ -218,7 +218,7 @@
         "value": 6,
         "unit": "meses"
       },
-      "disposal": "Coleta seletiva de papel"
+      "disposal": "Recicle na coleta seletiva de papel"
     },
     {
       "id": 21,
@@ -229,7 +229,7 @@
         "value": 2,
         "unit": "meses"
       },
-      "disposal": "Coleta seletiva de papel"
+      "disposal": "Recicle na coleta seletiva de papel"
     },
     {
       "id": 22,
@@ -240,7 +240,7 @@
         "value": 200,
         "unit": "anos"
       },
-      "disposal": "Coleta seletiva de metais (se limpo); lixo comum (se engordurado)"
+      "disposal": "Limpo: recicle; sujo: lixo comum"
     },
     {
       "id": 23,
@@ -251,7 +251,7 @@
         "value": 1,
         "unit": "mês"
       },
-      "disposal": "Lixo comum"
+      "disposal": "Descarte no lixo comum"
     },
     {
       "id": 24,
@@ -262,7 +262,7 @@
         "value": 1,
         "unit": "mês"
       },
-      "disposal": "Lixo comum"
+      "disposal": "Descarte no lixo comum"
     },
     {
       "id": 25,
@@ -273,7 +273,7 @@
         "value": 200,
         "unit": "anos"
       },
-      "disposal": "Lixo comum"
+      "disposal": "Descarte no lixo comum"
     },
     {
       "id": 26,
@@ -284,18 +284,18 @@
         "value": 400,
         "unit": "anos"
       },
-      "disposal": "Lixo comum"
+      "disposal": "Descarte no lixo comum"
     },
     {
       "id": 27,
-      "title": "Caixa de pizza engordurada",
+      "title": "Caixa de pizza",
       "type": "paper",
       "recyclable": false,
       "degradation": {
         "value": 6,
         "unit": "meses"
       },
-      "disposal": "Lixo comum"
+      "disposal": "Descarte no lixo comum"
     },
     {
       "id": 28,
@@ -306,18 +306,18 @@
         "value": 1000,
         "unit": "anos"
       },
-      "disposal": "Ponto de coleta específico"
+      "disposal": "Entregue no ponto de coleta específico"
     },
     {
       "id": 29,
       "title": "Celular velho",
-      "type": "metal",
+      "type": "steel",
       "recyclable": true,
       "degradation": {
         "value": 1000,
         "unit": "anos"
       },
-      "disposal": "Reciclagem de eletrônicos"
+      "disposal": "Recicle em pontos de coleta de eletrônicos"
     },
     {
       "id": 30,
@@ -328,7 +328,7 @@
         "value": 500,
         "unit": "anos"
       },
-      "disposal": "Lixo comum"
+      "disposal": "Descarte no lixo comum"
     }
   ]
 }
